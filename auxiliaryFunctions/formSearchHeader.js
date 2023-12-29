@@ -19,7 +19,8 @@ window.addEventListener("resize", (e) => {
   btnSearch.style.display = "flex";
 });
 
-btnSearch.onclick = function () {
+btnSearch.onclick = function (e) {
+  e.preventDefault();
   search();
 };
 
